@@ -28,12 +28,10 @@ RUN useradd -d /home/python -m python
 # virtualenv Pythonの仮想環境構築コマンド
 # flake8 コーディングスタイル/シンタックスのチェック
 # ipython Pythonのインタラクティブモード拡張
-# bottle Pytrhonの軽量フレームワーク
 # Flask Pytrhonの軽量フレームワーク
 RUN pip install virtualenv \
 				ipython \
 				flake8 \
-				bottle \
                 Flask
 
 # MySQLドライバ"mysql-connector-python"をインストール

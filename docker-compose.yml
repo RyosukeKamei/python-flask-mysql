@@ -1,5 +1,5 @@
 data:
-  container_name: python-data
+  container_name: python-flask-data
   image: busybox
   stdin_open: true
   tty: false
@@ -9,7 +9,7 @@ data:
   command: /bin/sh
 
 mysql:
-  container_name: python-db
+  container_name: python-flask-db
   image: mysql
   volumes:
    - ./initdb.d:/docker-entrypoint-initdb.d
@@ -24,16 +24,13 @@ mysql:
     - data
 
 application:
-  container_name: python-bottle-app
+  container_name: python-flask-app
   build: .
   # image: pythonbottle_application
   tty: false
   volumes_from:
     - data
   ports:
-    - "8080:8080"
     - "5000:5000"
-  environment:
-    CODEIGNITER_ENV: development
   links:
-    - mysql:bottle-db
+    - mysql:python-flask-db
