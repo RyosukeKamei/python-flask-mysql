@@ -1,0 +1,2 @@
+3.0
+{'vim-flake8': {'checked_time': 1470442742, 'installed_uri': 'https://github.com/nvie/vim-flake8.git', 'installed_path': '/home/bottle/.vim/bundle/vim-flake8', 'revisions': {'1469476091': 'e0980afa8f6cef5e5e1f93ef4ffe4b01d2e048e0'}, 'updated_time': '1469476091'}, 'neobundle.vim': {'checked_time': 1470442739, 'installed_uri': 'https://github.com/Shougo/neobundle.vim.git', 'installed_path': '/home/bottle/.vim/bundle/neobundle.vim', 'revisions': {}, 'updated_time': 1470442739}}

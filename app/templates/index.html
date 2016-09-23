@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3>Jinja2</h3>
+    <p>
+        {% if message %}
+            {{ message }}
+        {% else %}
+            特に何もありません。
+        {% endif %}
+    </p>
+{% endblock %}
